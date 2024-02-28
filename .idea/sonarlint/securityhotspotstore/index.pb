@@ -23,3 +23,9 @@ E
 ,web/twig-stories/hardcoded-demo.stories.json,b\4\b452c480f00c0f057bd935524d17f8b01e9640e1
 E
 pantheon.upstream.yml,d\6\d666214ccbcbbdd6288ac3cff2607f791485e008
+:
+
+.lando.yml,7\8\78004026f81f4a750daed2ac13e6f020c6767b27
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

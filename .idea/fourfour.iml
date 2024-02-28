@@ -53,7 +53,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/open-telemetry/sdk" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/open-telemetry/sem-conv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pantheon-systems/drupal-integrations" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/pantheon-upstreams/upstream-configuration" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pear/archive_tar" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pear/console_getopt" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pear/pear-core-minimal" />
