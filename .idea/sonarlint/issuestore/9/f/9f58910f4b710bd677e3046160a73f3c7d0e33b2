@@ -1,0 +1,6 @@
+
+;	php:S2003"&Replace "include" with "include_once".(ίυ‡»
+;	php:S2003!"&Replace "include" with "include_once".(ηκ
+2php:S125"Remove this commented out code.(™‰
+a	php:S4833"LReplace "include" with namespace import mechanism through the "use" keyword.(ίυ‡»
+a	php:S4833!"LReplace "include" with namespace import mechanism through the "use" keyword.(ηκ

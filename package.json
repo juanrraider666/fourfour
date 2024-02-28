@@ -1,0 +1,24 @@
+{
+  "name": "fourfour",
+  "version": "1.0.0",
+  "description": "This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams that work with the Platform's Integrated Composer build process. It is also the Platform's standard Drupal 9 upstream.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "author": "",
+  "license": "ISC",
+  "packageManager": "yarn@4.1.0",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.16",
+    "@storybook/addon-links": "^7.6.16",
+    "@storybook/blocks": "^7.6.16",
+    "@storybook/server": "^7.6.16",
+    "@storybook/server-webpack5": "^7.6.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "^7.6.16"
+  }
+}
