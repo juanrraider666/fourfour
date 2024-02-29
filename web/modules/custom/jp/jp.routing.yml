@@ -1,0 +1,10 @@
+jp.hello:
+  # The path always starts with a leading forward-slash.
+  path: '/hello'
+  # Defines the default properties of a route.
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _controller: '\Drupal\jp\HelloWorldController::index'
+  # Require a permission to access this route.
+  requirements:
+    _permission: 'access content'
