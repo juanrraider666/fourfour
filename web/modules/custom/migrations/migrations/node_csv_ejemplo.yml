@@ -1,0 +1,20 @@
+id: node_ejemplo #ejecutar con  lando drush mim node_ejemplo
+label: "Ejemplo de migracion de contenido basic"
+migrate_group: ejemplo
+source: #fuente de donde se extrae la data
+    plugin: csv
+    path: modules/custom/migrations/data/node_csv_ejemplo.csv
+    ids: [unique_id]
+process: #es el proceso que tienen que hacer los datos y se manda a su destino
+    title: title
+    body/value:
+      plugin: get
+      source: body #nombre del campo de donde viene la fuente
+    body/format:
+      plugin: default_value
+      default_value: 'full_html'
+      field_comentarios: comments
+destination: #donde lo tiene que mandar
+    plugin: 'entity:node' #indicamos que es un tipo de contenido nodo
+    default_bundle: migracion
+migration_dependencies: []

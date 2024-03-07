@@ -1,0 +1,36 @@
+{# [module]/templates/my-template.html.twig #}
+{% extends '@jp/base.html.twig' %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    {{ block('title') }}
+    <p class="important">
+    test_var: {{ test_var|join(' , ')}}
+    </p>
+
+        {% embed "@jp/_hello_skeleton.html.twig" %}
+            {% block top %}
+               Hola estoy sobrescribiendo
+            {% endblock %}
+        {% endembed %}
+
+{% endblock %}
+
+{% block post %}
+    <article>
+        <header>{{ post.title }}</header>
+        <section>{{ post.body }}</section>
+    </article>
+{% endblock %}
+
+
+
+
+

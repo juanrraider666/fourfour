@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function jp_theme($existing, $type, $theme, $path) {
+ return [
+      'hello-world' => [
+          'variables' => ['test_var' => 'sss', 'posts' => []],
+      ],
+  ];
+}

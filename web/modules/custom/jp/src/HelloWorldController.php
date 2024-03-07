@@ -13,7 +13,21 @@ use Drupal\Core\Controller\ControllerBase;
  */
 class HelloWorldController extends ControllerBase {
 
-    public function index(): \Symfony\Component\HttpFoundation\JsonResponse {
-        return new \Symfony\Component\HttpFoundation\JsonResponse(['Hello World ' . $this->currentUser()->getEmail()]);
+    /**
+     * @see https://www.drupal.org/docs/develop/theming-drupal/twig-in-drupal/create-custom-twig-templates-for-custom-module
+     */
+    public function index(): array {
+
+        $abcedario = range('A', 'Z');
+
+        return [
+            '#theme' => 'hello-world', //nombre del twig
+            '#test_var' => $abcedario,
+            '#posts' => [
+                ['title' => 'Articles', 'body' => 'This is a new Article about the system'],
+                ['title' => 'News', 'body' => 'This is a new Article about the system'],
+            ],
+        ];
     }
+
 }
